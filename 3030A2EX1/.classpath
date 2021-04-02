@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="OldTempSensorDevice.jar"/>
+	<classpathentry kind="lib" path="OldTempSensorDriver.jar"/>
+	<classpathentry kind="lib" path="SSDCS/1-Standards.jar"/>
+	<classpathentry kind="lib" path="SSDCS/2-ClassLibrary-TempSensor.jar"/>
+	<classpathentry kind="lib" path="SSDCS/3-ClassLibrary-Furnace.jar"/>
+	<classpathentry kind="lib" path="SSDCS/4-ThermostatFrontEnd.jar"/>
+	<classpathentry kind="lib" path="SSDCS/5-Scenario.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
