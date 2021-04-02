@@ -1,12 +1,14 @@
 package itec3030.assignments.a2;
 
 import itec3030.smarthome.standards.*;
+import oldtempinc.drivers.OldTempSensor;
+
 
 
 public class OldTempSensorAdapter implements TemperatureSensor{
 
-	//private OldTempSensor oldTempSensor = new OldTempSensor();
-
+	private OldTempSensor oldTempsensor = new OldTempSensor();
+	
 	private ControllerInterface controllerInterface;
 
 	private String ID;
@@ -60,12 +62,14 @@ public class OldTempSensorAdapter implements TemperatureSensor{
 	@Override
 	public int getReading() {
 		// TODO Auto-generated method stub
+		this.temperature = (int) this.oldTempsensor.getTemperature();
 		return temperature;
 	}
 
 	@Override
 	public void newTemperature(int paramInt) {
-		this.temperature = paramInt;
+		
+		this.oldTempsensor.newTemperature(paramInt);
 		
 	}
 	
